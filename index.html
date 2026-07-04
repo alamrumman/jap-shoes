@@ -20,21 +20,10 @@
     <meta name="twitter:title" content="絆 KIZUNA — Forged for the Journey" />
     <meta name="twitter:description" content="日本の職人技が生んだ、耐久性と美しさの融合。" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Load fonts without blocking render; swap in on load. -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Inter:wght@400;500&family=Noto+Serif+JP:wght@500&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Inter:wght@400;500&family=Noto+Serif+JP:wght@500&display=swap"
-      />
-    </noscript>
+    <!-- Fonts are self-hosted (src/index.css) and subsetted to the glyphs
+         this app actually uses, so no third-party font origin/round trip. -->
+    <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/noto-serif-jp-500-subset.woff2" as="font" type="font/woff2" crossorigin />
 
     <script type="application/ld+json">
       {
